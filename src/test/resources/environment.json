@@ -1,0 +1,5 @@
+{
+  "baseUrl": "http://localhost:8080/web",
+  "apiUrl": "http://localhost:8080/api",
+  "addProject": "http://localhost:8080/web/addProject"
+}
