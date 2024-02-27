@@ -4,7 +4,7 @@ import constant.Endpoints;
 import constant.Parameters;
 import io.restassured.response.Response;
 import models.ApiVariant;
-import models.Test;
+import models.TestModel;
 import org.apache.http.HttpStatus;
 import java.util.List;
 
@@ -23,7 +23,7 @@ public class ApiUtils extends BaseApiUtils {
         return response.asString();
     }
 
-    public List<Test> getTestsForProject(int projectId) {
+    public List<TestModel> getTestsForProject(int projectId) {
         Response response = getBaseRequestSpecification()
                 .queryParam(Parameters.PROJECT_ID, projectId)
                 .when()
@@ -33,7 +33,7 @@ public class ApiUtils extends BaseApiUtils {
                 .extract()
                 .response();
 
-        return response.jsonPath().getList("", Test.class);
+        return response.jsonPath().getList("", TestModel.class);
     }
 
     public String createTest(String sId, String projectName, String testName, String methodName, String env) {

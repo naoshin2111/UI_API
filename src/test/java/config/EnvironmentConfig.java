@@ -20,5 +20,4 @@ public class EnvironmentConfig {
     public static String getProjectUrl() {
         return SETTINGS_FILE.getValue("/addProject").toString();
     }
-
 }

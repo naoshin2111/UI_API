@@ -6,7 +6,6 @@ import io.restassured.filter.log.RequestLoggingFilter;
 import io.restassured.filter.log.ResponseLoggingFilter;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeSuite;
-
 import static aquality.selenium.browser.AqualityServices.getBrowser;
 
 public abstract class BaseTest {

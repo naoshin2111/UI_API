@@ -3,7 +3,7 @@ package models;
 import lombok.Data;
 
 @Data
-public class Test {
+public class TestModel {
 
     private String duration;
     private String method;
